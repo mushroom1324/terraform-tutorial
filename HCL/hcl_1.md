@@ -4,7 +4,7 @@
 
 HCL 문법은 **Blocks** 와 **Arguments** 으로 이루어져있다.
 
-``` html
+``` terraform
 <block> <parameters> {
     key1 = value1
     key2 = value2
@@ -18,7 +18,7 @@ HCL 문법은 **Blocks** 와 **Arguments** 으로 이루어져있다.
 > _블럭은 infrastructure platform의 정보를 포함하며, 플랫폼에서 만들고자 하는 자원들을 정의한다._
 
 다음 예시는 테라폼의 블럭 구조 이해를 돕기 위한 코드이다:
-``` json
+``` terraform
 resource "local_file" "pet" {
     filename = "root/pets.txt"
     content = "We love pets!"
