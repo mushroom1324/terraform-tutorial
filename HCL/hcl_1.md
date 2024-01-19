@@ -99,6 +99,10 @@ terraform apply
 
 실제로 테라폼이 변경사항을 수행한다.
 
+명령어 실행 시, 재차 확인 과정을 거치는데, `yes` 를 입력하자.
+
+![img_5.png](../images/hcl_1/img_5.png)
+
 명령 수행 후, /root/pets.txt가 생성된걸 확인할 수 있다.
 
 기대되는 output:
