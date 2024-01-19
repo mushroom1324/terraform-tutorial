@@ -54,7 +54,7 @@ resource "local_file" "pet" {
 
 실습을 위해, 예제 코드를 실행해본다.
 
-![img.png](../images/hcl_1/img_4.png)
+![img.png](../images/1-hcl/img_4.png)
 
 임의의 폴더에 `test.tf` 파일을 생성한 후, 다음의 내용을 입력한다.
 
@@ -75,7 +75,7 @@ terraform init
 
 기대되는 output 은 다음과 같다:
 
-![img.png](../images/hcl_1/img.png)
+![img.png](../images/1-hcl/img.png)
 
 다음으로 해당 명령어를 실행한다:
 
@@ -87,7 +87,7 @@ terraform plan
 
 기대되는 output 은 다음과 같다:
 
-![img_1.png](../images/hcl_1/img_1.png)
+![img_1.png](../images/1-hcl/img_1.png)
 
 어떤 변경사항이 생길지 터미널을 통해 확인할 수 있다.
 
@@ -101,15 +101,15 @@ terraform apply
 
 명령어 실행 시, 재차 확인 과정을 거치는데, `yes` 를 입력하자.
 
-![img_5.png](../images/hcl_1/img_5.png)
+![img_5.png](../images/1-hcl/img_5.png)
 
 명령 수행 후, /root/pets.txt가 생성된걸 확인할 수 있다.
 
 기대되는 output:
 
-![img_3.png](../images/hcl_1/img_3.png)
+![img_3.png](../images/1-hcl/img_3.png)
 
 실행 후 파일이 생성된 모습:
 
-![img_2.png](../images/hcl_1/img_2.png)
+![img_2.png](../images/1-hcl/img_2.png)
 
