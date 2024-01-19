@@ -49,3 +49,63 @@ resource "local_file" "pet" {
     - content 으로 파일 내용을 지정한다.
 
 > `/root` 경로에 _We love pets!_ 내용을 포함하는 `pets.txt` 를 생성한다.
+
+### 실습
+
+실습을 위해, 예제 코드를 실행해본다.
+
+![img.png](../images/hcl_1/img_4.png)
+
+임의의 폴더에 `test.tf` 파일을 생성한 후, 다음의 내용을 입력한다.
+
+``` terraform
+resource "local_file" "pet" {
+    filename = "root/pets.txt"
+    content = "We love pets!"
+}
+```
+  
+입력을 마치면 터미널을 열고, 임의의 폴더에서 해당 명령어를 실행한다:
+
+``` Shell
+terraform init
+```
+
+이 명령어를 통해 테라폼이 필요한 provider plugins 를 다운로드한다. (gradle build와 비슷한 개념)
+
+기대되는 output 은 다음과 같다:
+
+![img.png](../images/hcl_1/img.png)
+
+다음으로 해당 명령어를 실행한다:
+
+```Shell
+terraform plan
+```
+
+명령어를 실행하면 테라폼이 변경 사항을 **계획**한다.
+
+기대되는 output 은 다음과 같다:
+
+![img_1.png](../images/hcl_1/img_1.png)
+
+어떤 변경사항이 생길지 터미널을 통해 확인할 수 있다.
+
+마지막으로 해당 명령어를 실행한다:
+
+```Shell
+terraform apply
+```
+
+실제로 테라폼이 변경사항을 수행한다.
+
+명령 수행 후, /root/pets.txt가 생성된걸 확인할 수 있다.
+
+기대되는 output:
+
+![img_3.png](../images/hcl_1/img_3.png)
+
+실행 후 파일이 생성된 모습:
+
+![img_2.png](../images/hcl_1/img_2.png)
+

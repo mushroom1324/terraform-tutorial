@@ -1,3 +1,6 @@
+# playground for test
+/playground/**
+
 # Local .terraform directories
 **/.terraform/*
 
