@@ -43,3 +43,5 @@ commands will detect it and remind you to do so if necessary.
   - `local` : type 으로, provider 의 이름이다.
 
 기본적으로 가장 최신 버전을 다운로드 및 설치하며, 원한다면 특정 버전으로 고정할 수 있다.
+
+- `terraform init` 명령어 실행 후, 같은 폴더의 `.terraform.lock.hcl` 파일에서 설치된 플러그인과 버전 정보를 확인할 수 있다.
