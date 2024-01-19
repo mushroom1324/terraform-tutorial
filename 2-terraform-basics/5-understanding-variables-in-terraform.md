@@ -88,7 +88,7 @@ terraform apply -var-file="variable.tfvars"
 1. command line flag (가장 높은 우선순위)
 2. `*.auto.tfvars` 또는 `*.auto.tfvars.json`
 3. `terraform.tfvars` 또는 `terraform.tfvars.json`
-4. environment variables (가장 낮은 우선순위)
+4. environment variables
 5. `variable` block 내의 `default` value
 6. interactive mode
 
