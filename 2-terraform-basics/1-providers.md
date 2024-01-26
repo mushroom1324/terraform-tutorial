@@ -8,7 +8,8 @@ provider는 AWS, GCP, Azure 뿐 아니라 앞전 예시에서 다루었던 `loca
 
 테라폼은 plugin-based architecture 를 기반으로, 3800++ 개의 인프라스트럭쳐 플랫폼과 작용한다.
 
-https://registry.terraform.io/ 에 방문하여 이를 확인할 수 있다.
+> [!TIP]
+> https://registry.terraform.io/ 에 방문하여 이를 확인할 수 있다.
 
 `terraform init` 의 실행 예시이다:
 

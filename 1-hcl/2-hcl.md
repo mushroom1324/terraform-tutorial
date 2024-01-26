@@ -12,6 +12,7 @@ resource "local_file" "pet" {
 
 해당 resource 를 가지고 `terraform apply`까지 마친 후, 매개변수를 추가해보자. 
 
+> [!TIP]
 > `local` provider 의 `file` 에 대한 매개변수는 [테라폼 도큐먼트](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)에서 확인할 수 있다.
 
 ``` terraform

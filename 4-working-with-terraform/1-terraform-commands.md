@@ -126,6 +126,7 @@ output "pet-name" {
 
 graphviz 를 설치한 후 `terraform graph | dot -Tsvg > graph.svg` 명령어를 통해 그래프를 svg 파일로 출력할 수 있다.
 
+> [!NOTE]  
 > MacOS 에서는 `brew install graphviz` 명령어를 통해 graphviz 를 설치할 수 있다. (Homebrew 가 설치되어 있어야 함)
 
 ```terraform

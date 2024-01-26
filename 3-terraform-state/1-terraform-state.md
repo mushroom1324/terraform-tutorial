@@ -130,5 +130,6 @@ resource "random_pet" "my-pet" {
 
 state file 을 remote storage 에 저장하여 여러 사용자가 최신의 state 를 받아보고, 동시에 테라폼 명령어를 실행하지 않도록 해야 한다.
 
-_Amazon S3_, _Azure Blob Storage_, _Google Cloud Storage_, _HashiCorp Consul_, _HashiCorp Terraform Cloud_ 등의 remote storage 를 사용할 수 있다.
+> [!NOTE]  
+> _Amazon S3_, _Azure Blob Storage_, _Google Cloud Storage_, _HashiCorp Consul_, _HashiCorp Terraform Cloud_ 등의 remote storage 를 사용할 수 있다.
 
