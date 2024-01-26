@@ -31,13 +31,13 @@ resource "local_file" "pet" {
 
 `terraform validate` 를 실행하면 다음과 같은 결과를 얻을 수 있다:
 
-![img.png](../images/3-terraform-commands/1-terraform-commands/img.png)
+![img.png](../images/4-working-with-terraform/1-terraform-commands/img.png)
 
 몇번째 라인이 잘못되었는지 알려준다.
 
 문법이 올바른 경우 다음과 같은 결과를 얻을 수 있다:
 
-![img_1.png](../images/3-terraform-commands/1-terraform-commands/img_1.png)
+![img_1.png](../images/4-working-with-terraform/1-terraform-commands/img_1.png)
 
 ### terraform fmt
 
@@ -69,17 +69,17 @@ resource "local_file" "pet" {
 
 `terraform show` 명령어는 테라폼의 상태를 보여준다.
 
-![img_2.png](../images/3-terraform-commands/1-terraform-commands/img_2.png)
+![img_2.png](../images/4-working-with-terraform/1-terraform-commands/img_2.png)
 
 `terraform show -json` 명령어를 통해 json 형식으로도 출력할 수 있다:
 
-![img_3.png](../images/3-terraform-commands/1-terraform-commands/img_3.png)
+![img_3.png](../images/4-working-with-terraform/1-terraform-commands/img_3.png)
 
 ### terraform providers
 
 `terraform providers` 명령어는 configuration directory 에서 사용된 모든 provider 들의 정보를 보여준다:
 
-![img_4.png](../images/3-terraform-commands/1-terraform-commands/img_4.png)
+![img_4.png](../images/4-working-with-terraform/1-terraform-commands/img_4.png)
 
 `terraform providers mirror ./mirror` 명령어를 통해 현재 사용된 모든 provider 들을 `mirror` 디렉토리에 복사할 수 있다.
 
@@ -103,7 +103,7 @@ output "pet-name" {
 
 위 파일에서 `terraform output` 을 실행하면 다음과 같은 결과를 얻을 수 있다:
 
-![img_5.png](../images/3-terraform-commands/1-terraform-commands/img_5.png)
+![img_5.png](../images/4-working-with-terraform/1-terraform-commands/img_5.png)
 
 `terraform output <output_variable_name>` 명령어를 통해 특정 output 만 따로 출력할 수 있다.
 
@@ -160,5 +160,5 @@ output "pet-name" {
 
 해당 파일에 대한 그래프는 다음과 같다:
 
-![img_7.png](../images/3-terraform-commands/1-terraform-commands/img_7.png)
+![img_7.png](../images/4-working-with-terraform/1-terraform-commands/img_7.png)
 
