@@ -40,4 +40,6 @@ data "local_file" "pet" {
 > [!TIP]
 > https://registry.terraform.io/ 에서 `datasource` 의 데이터를 가져오는 방법을 확인할 수 있다.
 
+![img.png](../images/4-working-with-terraform/4-datasources/img.png)
+
 테라폼에서 `resource` 는 **managed resource** 를, `datasource` 는 **data resource** 를 의미한다.
