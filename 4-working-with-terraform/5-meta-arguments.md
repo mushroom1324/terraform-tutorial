@@ -166,3 +166,6 @@ variable "filename" {
 ![img_5.png](../images/4-working-with-terraform/5-meta-arguments/img_5.png)
 
 `terraform apply` 실행 시, 기존의 `count` 를 사용해서 만들어진 index 를 사용하지 않고, `filename` 의 값을 그대로 사용하여 `map` 구조로 리소스를 생성한다.
+
+> [!TIP]
+> `for_each = toset(var.filename)` 을 사용하면 `set` 자료형으로 변환할 수 있다.
